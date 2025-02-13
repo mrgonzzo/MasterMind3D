@@ -176,7 +176,7 @@ public class TurnController : MonoBehaviour
         //Debug.Log("TurnController generarRespuesta en " + respuesta.name);
         for (int i = 0; i < bet.Length; i++)
         {
-            Debug.Log("TurnController generarRespuesta i = " + i + "bet[i] = " + bet[i]);
+            Debug.Log("TurnController generarRespuesta i = " + i + " bet[i] = " + bet[i]);
             Transform hijoTransform = respuesta.transform.Find("R_" + i);
             GameObject cubo = hijoTransform.gameObject;
              for (int j = 0; j < secret.Length; j++)
@@ -186,16 +186,16 @@ public class TurnController : MonoBehaviour
                 {
                     if (i == j)
                     {
-                        Debug.Log("TurnController generarRespuesta pinto la respuesta de NEGRO i == j");
-                        Debug.Log("TurnController generarRespuesta i = " + i + "bet[i] = " + bet[i] + " j = " + j + " secret[j] = " + secret[j]);
+                        Debug.Log("TurnController generarRespuesta pinto la respuesta " + cubo.name + " de NEGRO i == j");
+                        Debug.Log("TurnController generarRespuesta i = " + i + " bet[i] = " + bet[i] + " j = " + j + " secret[j] = " + secret[j]);
                         color = Constantes.negro;
                         pcp.pintarRespuesta(cubo,color);
                         pinesNegros++;
                     }
                     else
                     {
-                        Debug.Log("TurnController generarRespuesta pinto la respuesta de BLANCO i != j");
-                        Debug.Log("TurnController generarRespuesta i = " + i + "bet[i] = " + bet[i] + " j = " + j + " secret[j] = " + secret[j]);
+                        Debug.Log("TurnController generarRespuesta pinto la respuesta " + cubo.name + "  de BLANCO i != j");
+                        Debug.Log("TurnController generarRespuesta i = " + i + " bet[i] = " + bet[i] + " j = " + j + " secret[j] = " + secret[j]);
                         color = Constantes.blanco;
                         pcp.pintarRespuesta(cubo,color);                
                     }
