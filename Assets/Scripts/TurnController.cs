@@ -176,10 +176,12 @@ public class TurnController : MonoBehaviour
         //Debug.Log("TurnController generarRespuesta en " + respuesta.name);
         for (int i = 0; i < bet.Length; i++)
         {
+            Debug.Log("TurnController generarRespuesta i = " + i + "bet[i] = " + bet[i]);
             Transform hijoTransform = respuesta.transform.Find("R_" + i);
             GameObject cubo = hijoTransform.gameObject;
              for (int j = 0; j < secret.Length; j++)
-            {   
+            {
+                Debug.Log("TurnController generarRespuesta  j = " + j + " secret[j] = " + secret[j]);
                 if (secret[j] == bet[i])
                 {
                     if (i == j)
