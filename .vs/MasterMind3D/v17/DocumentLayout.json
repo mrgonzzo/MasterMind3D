@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\assets\\scripts\\constantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\assets\\scripts\\turncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\assets\\scripts\\pincolorpainter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pincolorpainter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\assets\\scripts\\pincolorsellector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pincolorsellector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|c:\\users\\gonzzo\\unity\\mm\\mastermind3d\\assets\\scripts\\constantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\constantes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|c:\\users\\gonzzo\\unity\\mm\\mastermind3d\\assets\\scripts\\turncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\assets\\scripts\\pincolorsellector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pincolorsellector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7DB6633-CFD8-AE16-E61E-BD9FB2289444}|Assembly-CSharp.csproj|C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\assets\\scripts\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,29 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TurnController.cs",
-              "DocumentMoniker": "C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\Assets\\Scripts\\TurnController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\TurnController.cs",
-              "ToolTip": "C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\Assets\\Scripts\\TurnController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\TurnController.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAqwJ0AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-01T15:33:28.372Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
@@ -68,6 +47,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TurnController.cs",
+              "DocumentMoniker": "C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\Assets\\Scripts\\TurnController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TurnController.cs",
+              "ToolTip": "C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\Assets\\Scripts\\TurnController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TurnController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T15:33:28.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Constantes.cs",
               "DocumentMoniker": "C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\Assets\\Scripts\\Constantes.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Constantes.cs",
@@ -80,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PinColorSellector.cs",
               "DocumentMoniker": "C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\Assets\\Scripts\\PinColorSellector.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PinColorSellector.cs",
@@ -88,8 +80,7 @@
               "RelativeToolTip": "Assets\\Scripts\\PinColorSellector.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T14:41:28.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T14:41:28.758Z"
             },
             {
               "$type": "Document",
@@ -99,7 +90,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\PinColorPainter.cs",
               "ToolTip": "C:\\Users\\gonzzo\\UNITY\\MM\\MasterMind3D\\Assets\\Scripts\\PinColorPainter.cs",
               "RelativeToolTip": "Assets\\Scripts\\PinColorPainter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-30T15:41:03.067Z",
               "EditorCaption": ""
@@ -114,8 +105,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-29T17:15:36.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-29T17:15:36.479Z"
             },
             {
               "$type": "Document",
@@ -127,8 +117,7 @@
               "RelativeToolTip": "Assets\\Scripts\\SecretCodeManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-30T13:45:21.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-30T13:45:21.453Z"
             }
           ]
         }

@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 using static Unity.VisualScripting.StickyNote;
-using static UnityEditor.PlayerSettings;
+//using static UnityEditor.PlayerSettings;
 using Color = UnityEngine.Color;
 
 public class PinColorPainter : MonoBehaviour

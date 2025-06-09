@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\PinColorSellector.cs" />
     <Compile Include="Assets\Scripts\PinColorPainter.cs" />
+    <Compile Include="Assets\Scripts\closeApp.cs" />
     <Compile Include="Assets\Scripts\TurnController.cs" />
     <Compile Include="Assets\Scripts\SecretCodeManager.cs" />
     <Compile Include="Assets\Scripts\Constantes.cs" />
