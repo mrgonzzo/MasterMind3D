@@ -12,48 +12,31 @@ public class TurnController : MonoBehaviour
 
     PinColorPainter pcp;
     GameController gc;
-    
+    GameObject Cover;
     int[] beta;
     int[] sca;
     int turno;
-
-   /* private void Awake()
-    {
-        GameObject go_gamecontroller = new GameObject();
-        gc = go_gamecontroller.AddComponent<GameController>();
-
-    }*/
 
     private void Start()
     {
         turno = 0;        
         gc = FindFirstObjectByType<GameController>();// FindObjectOfType<GameController>(); // Busca el GameController en la escena
-       /* if (gc == null)
-        {
-            Debug.LogError("TurnController      No se encontró un GameController en la escena.");
-        }*/
-    } 
-
-
-    //int[] betA = GameController.betArray;
+        Cover = GameObject.FindWithTag("cover"); 
+        
+    }
 
     public void PlayTurn()
        {
         pcp = FindFirstObjectByType<PinColorPainter>();
-        /*if (pcp == null)
-        {
-            Debug.LogError("TurnController   No se encontró un PinColorPainter en la escena.");
-        }
-        else {
-            Debug.Log("TurnController    pcp.name: " + pcp.name);
-        }*/
-        //Debug.Log("TurnController  BOTON PULSADO *****************************************");
+        
         // 1 poner el boxcollider del turno code_turno a off
         DisableTurn("Code_" + turno);
-       // Debug.Log("TurnController turno " + turno + " disabled");
+   
         // 2 Comprobamos que los arrays GameController.secretCodeArray vs. PinColorPainter.betArray  llegan correctamente
 
         sca = gc.secretCodeArray;
+
+        string nombre = gameObject.name;
 
         if (gc.secretCodeArray == null)
         {
@@ -97,7 +80,11 @@ public class TurnController : MonoBehaviour
        if (pines == 4 || turno == 9)
         {
             // fin del juego 
+
+            Cover.GetComponent<MeshRenderer>().enabled = false;
+
             Debug.Log("TurnController FIN DEL JUEGO:   pines =" +  pines + " turno = " + turno);
+           
         }
         else 
         {
@@ -168,41 +155,86 @@ public class TurnController : MonoBehaviour
             Debug.LogError("TurnController EnableTurn No se encontró un objeto con el nombre especificado.");
         }
     }
+    // metodo generarRespuesta() generado por IA
     public int generarRespuesta(int[] secret, int[] bet)
-    {//PintarCubos(GameObject cubo)
-        UnityEngine.Color color = new UnityEngine.Color();
+    {
+        UnityEngine.Color color;
         int pinesNegros = 0;
-        GameObject respuesta = GameObject.Find("Response_" + turno);
-        //Debug.Log("TurnController generarRespuesta en " + respuesta.name);
+        GameObject respuesta = GameObject.Find("Response_" + turno); // Mejor: guardar referencia antes
+        bool[] secretUsado = new bool[secret.Length];
+        bool[] betUsado = new bool[bet.Length];
+
+        // Primero, pines negros (aciertos exactos)
         for (int i = 0; i < bet.Length; i++)
         {
-            Debug.Log("TurnController generarRespuesta i = " + i + " bet[i] = " + bet[i]);
-            Transform hijoTransform = respuesta.transform.Find("R_" + i);
-            GameObject cubo = hijoTransform.gameObject;
-             for (int j = 0; j < secret.Length; j++)
+            if (bet[i] == secret[i])
             {
-                Debug.Log("TurnController generarRespuesta  j = " + j + " secret[j] = " + secret[j]);
-                if (secret[j] == bet[i])
+                Transform hijoTransform = respuesta.transform.Find("R_" + i);
+                GameObject cubo = hijoTransform.gameObject;
+                color = Constantes.negro;
+                pcp.pintarRespuesta(cubo, color);
+                pinesNegros++;
+                secretUsado[i] = true;
+                betUsado[i] = true;
+            }
+        }
+
+        // Luego, pines blancos (aciertos de color en posición incorrecta)
+        for (int i = 0; i < bet.Length; i++)
+        {
+            if (betUsado[i]) continue;
+            for (int j = 0; j < secret.Length; j++)
+            {
+                if (!secretUsado[j] && bet[i] == secret[j])
                 {
-                    if (i == j)
-                    {
-                        Debug.Log("TurnController generarRespuesta pinto la respuesta " + cubo.name + " de NEGRO i == j");
-                        Debug.Log("TurnController generarRespuesta i = " + i + " bet[i] = " + bet[i] + " j = " + j + " secret[j] = " + secret[j]);
-                        color = Constantes.negro;
-                        pcp.pintarRespuesta(cubo,color);
-                        pinesNegros++;
-                    }
-                    else
-                    {
-                        Debug.Log("TurnController generarRespuesta pinto la respuesta " + cubo.name + "  de BLANCO i != j");
-                        Debug.Log("TurnController generarRespuesta i = " + i + " bet[i] = " + bet[i] + " j = " + j + " secret[j] = " + secret[j]);
-                        color = Constantes.blanco;
-                        pcp.pintarRespuesta(cubo,color);                
-                    }
-                    
+                    Transform hijoTransform = respuesta.transform.Find("R_" + i);
+                    GameObject cubo = hijoTransform.gameObject;
+                    color = Constantes.blanco;
+                    pcp.pintarRespuesta(cubo, color);
+                    secretUsado[j] = true;
+                    break;
                 }
             }
         }
+
         return pinesNegros;
     }
+
+    /* public int generarRespuesta(int[] secret, int[] bet)
+     {//PintarCubos(GameObject cubo)
+         UnityEngine.Color color = new UnityEngine.Color();
+         int pinesNegros = 0;
+         GameObject respuesta = GameObject.Find("Response_" + turno);
+         //Debug.Log("TurnController generarRespuesta en " + respuesta.name);
+         for (int i = 0; i < bet.Length; i++)
+         {
+             Debug.Log("TurnController generarRespuesta i = " + i + " bet[i] = " + bet[i]);
+             Transform hijoTransform = respuesta.transform.Find("R_" + i);
+             GameObject cubo = hijoTransform.gameObject;
+              for (int j = 0; j < secret.Length; j++)
+             {
+                 Debug.Log("TurnController generarRespuesta  j = " + j + " secret[j] = " + secret[j]);
+                 if (secret[j] == bet[i])
+                 {
+                     if (i == j)
+                     {
+                         Debug.Log("TurnController generarRespuesta pinto la respuesta " + cubo.name + " de NEGRO i == j");
+                         Debug.Log("TurnController generarRespuesta i = " + i + " bet[i] = " + bet[i] + " j = " + j + " secret[j] = " + secret[j]);
+                         color = Constantes.negro;
+                         pcp.pintarRespuesta(cubo,color);
+                         pinesNegros++;
+                     }
+                     else
+                     {
+                         Debug.Log("TurnController generarRespuesta pinto la respuesta " + cubo.name + "  de BLANCO i != j");
+                         Debug.Log("TurnController generarRespuesta i = " + i + " bet[i] = " + bet[i] + " j = " + j + " secret[j] = " + secret[j]);
+                         color = Constantes.blanco;
+                         pcp.pintarRespuesta(cubo,color);                
+                     }
+
+                 }
+             }
+         }
+         return pinesNegros;
+     }*/
 }

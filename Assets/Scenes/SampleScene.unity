@@ -9712,11 +9712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b84568d2af5fa354084f3ac1346da4b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cubosCodigo:
-  - {fileID: 1714775947}
-  - {fileID: 919308147}
-  - {fileID: 1538222727}
-  - {fileID: 402821806}
   cuboPCP: {fileID: 0}
   colorNum: 
   posicionCubo: 0
@@ -10530,7 +10525,7 @@ GameObject:
   - component: {fileID: 2045603057}
   m_Layer: 0
   m_Name: Cover
-  m_TagString: Untagged
+  m_TagString: cover
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

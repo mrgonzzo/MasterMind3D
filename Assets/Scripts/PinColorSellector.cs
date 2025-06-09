@@ -20,15 +20,6 @@ public class PinColorSellector : MonoBehaviour
             {
                 // Tomar el número después de "Color_"
                 numeroStr = nombre.Substring(6); // Esto obtiene la parte después de "Color_"
-                /*if (int.TryParse(numeroStr, out numero))
-                {
-                    // Aquí puedes hacer algo con el número, como almacenarlo o usarlo
-                    Debug.Log("PinColorSellector Has cogido el color número: " + numero);
-                }
-                else
-                {
-                    Debug.LogError("El nombre no tiene un número válido.");
-                }*/
             }
         }
     }
